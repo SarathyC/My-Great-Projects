@@ -7,61 +7,250 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B607CB70200FA3DD00090BD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B607CB6F200FA3DD00090BD2 /* AppDelegate.swift */; };
+		B607CB72200FA3DD00090BD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B607CB71200FA3DD00090BD2 /* ViewController.swift */; };
+		B607CB75200FA3DD00090BD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B607CB73200FA3DD00090BD2 /* Main.storyboard */; };
+		B607CB77200FA3DD00090BD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B607CB76200FA3DD00090BD2 /* Assets.xcassets */; };
+		B607CB7A200FA3DE00090BD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B607CB78200FA3DE00090BD2 /* LaunchScreen.storyboard */; };
+		B607CB85200FA3DE00090BD2 /* CorePlotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B607CB84200FA3DE00090BD2 /* CorePlotTests.swift */; };
+		B607CB90200FA3DE00090BD2 /* CorePlotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B607CB8F200FA3DE00090BD2 /* CorePlotUITests.swift */; };
+		C38AE1A11C745C7F005CBDD4 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38AE19F1C745C7F005CBDD4 /* MainStoryboard_iPad.storyboard */; };
 		DD75F54515673A4E00DE3307 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD75F54415673A4E00DE3307 /* UIKit.framework */; };
 		DD75F54715673A4E00DE3307 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD75F54615673A4E00DE3307 /* Foundation.framework */; };
 		DD75F54915673A4E00DE3307 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD75F54815673A4E00DE3307 /* CoreGraphics.framework */; };
 		DD75F54F15673A4E00DE3307 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD75F54D15673A4E00DE3307 /* InfoPlist.strings */; };
 		DD75F55115673A4E00DE3307 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD75F55015673A4E00DE3307 /* main.m */; };
 		DD75F55515673A4E00DE3307 /* CPDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD75F55415673A4E00DE3307 /* CPDAppDelegate.m */; };
-		DD75F55815673A4E00DE3307 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD75F55615673A4E00DE3307 /* MainStoryboard.storyboard */; };
-		DD75F55B15673A4E00DE3307 /* CPDFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD75F55A15673A4E00DE3307 /* CPDFirstViewController.m */; };
+		DD75F55815673A4E00DE3307 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD75F55615673A4E00DE3307 /* MainStoryboard_iPhone.storyboard */; };
+		DD75F55B15673A4E00DE3307 /* CPDPieChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD75F55A15673A4E00DE3307 /* CPDPieChartViewController.m */; };
 		DD75F55D15673A4E00DE3307 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = DD75F55C15673A4E00DE3307 /* first.png */; };
 		DD75F55F15673A4E00DE3307 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD75F55E15673A4E00DE3307 /* first@2x.png */; };
-		DD75F56215673A4E00DE3307 /* CPDSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD75F56115673A4E00DE3307 /* CPDSecondViewController.m */; };
+		DD75F56215673A4E00DE3307 /* CPDBarGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD75F56115673A4E00DE3307 /* CPDBarGraphViewController.m */; };
 		DD75F56415673A4E00DE3307 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = DD75F56315673A4E00DE3307 /* second.png */; };
 		DD75F56615673A4E00DE3307 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD75F56515673A4E00DE3307 /* second@2x.png */; };
+		DD75F5BE15673B4300DE3307 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD75F5BD15673B4300DE3307 /* libCorePlot-CocoaTouch.a */; };
+		DD75F5C015673D3D00DE3307 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD75F5BF15673D3D00DE3307 /* QuartzCore.framework */; };
+		DD75F5C615673FB200DE3307 /* CPDConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = DD75F5C315673FB200DE3307 /* CPDConstants.m */; };
+		DD75F5C715673FB200DE3307 /* CPDStockPriceStore.m in Sources */ = {isa = PBXBuildFile; fileRef = DD75F5C515673FB200DE3307 /* CPDStockPriceStore.m */; };
+		DD75F5D1156756AE00DE3307 /* CPDScatterPlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD75F5D0156756AE00DE3307 /* CPDScatterPlotViewController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B607CB81200FA3DE00090BD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD75F53715673A4E00DE3307 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B607CB6C200FA3DD00090BD2;
+			remoteInfo = CorePlot;
+		};
+		B607CB8C200FA3DE00090BD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD75F53715673A4E00DE3307 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B607CB6C200FA3DD00090BD2;
+			remoteInfo = CorePlot;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		B607CB6D200FA3DD00090BD2 /* CorePlot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CorePlot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B607CB6F200FA3DD00090BD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B607CB71200FA3DD00090BD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B607CB74200FA3DD00090BD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B607CB76200FA3DD00090BD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B607CB79200FA3DE00090BD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B607CB7B200FA3DE00090BD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B607CB80200FA3DE00090BD2 /* CorePlotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CorePlotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B607CB84200FA3DE00090BD2 /* CorePlotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorePlotTests.swift; sourceTree = "<group>"; };
+		B607CB86200FA3DE00090BD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B607CB8B200FA3DE00090BD2 /* CorePlotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CorePlotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B607CB8F200FA3DE00090BD2 /* CorePlotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorePlotUITests.swift; sourceTree = "<group>"; };
+		B607CB91200FA3DE00090BD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C38AE1A01C745C7F005CBDD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		DD75F54015673A4E00DE3307 /* CorePlotDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CorePlotDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD75F54415673A4E00DE3307 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DD75F54615673A4E00DE3307 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DD75F54815673A4E00DE3307 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DD75F54C15673A4E00DE3307 /* CorePlotDemo-Info.plist */ = {isa = PBXFileReference; path = "CorePlotDemo-Info.plist"; sourceTree = "<group>"; };
+		DD75F54C15673A4E00DE3307 /* CorePlotDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CorePlotDemo-Info.plist"; sourceTree = "<group>"; };
 		DD75F54E15673A4E00DE3307 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DD75F55015673A4E00DE3307 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DD75F55215673A4E00DE3307 /* CorePlotDemo-Prefix.pch */ = {isa = PBXFileReference; path = "CorePlotDemo-Prefix.pch"; sourceTree = "<group>"; };
-		DD75F55315673A4E00DE3307 /* CPDAppDelegate.h */ = {isa = PBXFileReference; path = CPDAppDelegate.h; sourceTree = "<group>"; };
+		DD75F55215673A4E00DE3307 /* CorePlotDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CorePlotDemo-Prefix.pch"; sourceTree = "<group>"; };
+		DD75F55315673A4E00DE3307 /* CPDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPDAppDelegate.h; sourceTree = "<group>"; };
 		DD75F55415673A4E00DE3307 /* CPDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPDAppDelegate.m; sourceTree = "<group>"; };
-		DD75F55715673A4E00DE3307 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		DD75F55915673A4E00DE3307 /* CPDFirstViewController.h */ = {isa = PBXFileReference; path = CPDFirstViewController.h; sourceTree = "<group>"; };
-		DD75F55A15673A4E00DE3307 /* CPDFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPDFirstViewController.m; sourceTree = "<group>"; };
+		DD75F55715673A4E00DE3307 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		DD75F55915673A4E00DE3307 /* CPDPieChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPDPieChartViewController.h; sourceTree = "<group>"; };
+		DD75F55A15673A4E00DE3307 /* CPDPieChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPDPieChartViewController.m; sourceTree = "<group>"; };
 		DD75F55C15673A4E00DE3307 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		DD75F55E15673A4E00DE3307 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		DD75F56015673A4E00DE3307 /* CPDSecondViewController.h */ = {isa = PBXFileReference; path = CPDSecondViewController.h; sourceTree = "<group>"; };
-		DD75F56115673A4E00DE3307 /* CPDSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPDSecondViewController.m; sourceTree = "<group>"; };
+		DD75F56015673A4E00DE3307 /* CPDBarGraphViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPDBarGraphViewController.h; sourceTree = "<group>"; };
+		DD75F56115673A4E00DE3307 /* CPDBarGraphViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPDBarGraphViewController.m; sourceTree = "<group>"; };
 		DD75F56315673A4E00DE3307 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		DD75F56515673A4E00DE3307 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		DD75F56E15673B4200DE3307 /* _CPTConstraintsFixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTConstraintsFixed.h; sourceTree = "<group>"; };
+		DD75F56F15673B4200DE3307 /* _CPTConstraintsRelative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTConstraintsRelative.h; sourceTree = "<group>"; };
+		DD75F57015673B4200DE3307 /* _CPTDarkGradientTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTDarkGradientTheme.h; sourceTree = "<group>"; };
+		DD75F57115673B4200DE3307 /* _CPTFillColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTFillColor.h; sourceTree = "<group>"; };
+		DD75F57215673B4200DE3307 /* _CPTFillGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTFillGradient.h; sourceTree = "<group>"; };
+		DD75F57315673B4200DE3307 /* _CPTFillImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTFillImage.h; sourceTree = "<group>"; };
+		DD75F57415673B4200DE3307 /* _CPTPlainBlackTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTPlainBlackTheme.h; sourceTree = "<group>"; };
+		DD75F57515673B4200DE3307 /* _CPTPlainWhiteTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTPlainWhiteTheme.h; sourceTree = "<group>"; };
+		DD75F57615673B4200DE3307 /* _CPTSlateTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTSlateTheme.h; sourceTree = "<group>"; };
+		DD75F57715673B4300DE3307 /* _CPTStocksTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTStocksTheme.h; sourceTree = "<group>"; };
+		DD75F57815673B4300DE3307 /* _CPTXYTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTXYTheme.h; sourceTree = "<group>"; };
+		DD75F57915673B4300DE3307 /* CorePlot-CocoaTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CorePlot-CocoaTouch.h"; sourceTree = "<group>"; };
+		DD75F57A15673B4300DE3307 /* CPTAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAnnotation.h; sourceTree = "<group>"; };
+		DD75F57B15673B4300DE3307 /* CPTAnnotationHostLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAnnotationHostLayer.h; sourceTree = "<group>"; };
+		DD75F57C15673B4300DE3307 /* CPTAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAxis.h; sourceTree = "<group>"; };
+		DD75F57D15673B4300DE3307 /* CPTAxisLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAxisLabel.h; sourceTree = "<group>"; };
+		DD75F57E15673B4300DE3307 /* CPTAxisLabelGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAxisLabelGroup.h; sourceTree = "<group>"; };
+		DD75F57F15673B4300DE3307 /* CPTAxisSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAxisSet.h; sourceTree = "<group>"; };
+		DD75F58015673B4300DE3307 /* CPTAxisTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAxisTitle.h; sourceTree = "<group>"; };
+		DD75F58115673B4300DE3307 /* CPTBarPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTBarPlot.h; sourceTree = "<group>"; };
+		DD75F58215673B4300DE3307 /* CPTBorderedLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTBorderedLayer.h; sourceTree = "<group>"; };
+		DD75F58315673B4300DE3307 /* CPTColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTColor.h; sourceTree = "<group>"; };
+		DD75F58415673B4300DE3307 /* CPTColorSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTColorSpace.h; sourceTree = "<group>"; };
+		DD75F58515673B4300DE3307 /* CPTConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTConstraints.h; sourceTree = "<group>"; };
+		DD75F58615673B4300DE3307 /* CPTDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTDefinitions.h; sourceTree = "<group>"; };
+		DD75F58715673B4300DE3307 /* CPTExceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTExceptions.h; sourceTree = "<group>"; };
+		DD75F58815673B4300DE3307 /* CPTFill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTFill.h; sourceTree = "<group>"; };
+		DD75F58915673B4300DE3307 /* CPTGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGradient.h; sourceTree = "<group>"; };
+		DD75F58A15673B4300DE3307 /* CPTGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGraph.h; sourceTree = "<group>"; };
+		DD75F58B15673B4300DE3307 /* CPTGraphHostingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGraphHostingView.h; sourceTree = "<group>"; };
+		DD75F58C15673B4300DE3307 /* CPTGridLineGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGridLineGroup.h; sourceTree = "<group>"; };
+		DD75F58D15673B4300DE3307 /* CPTGridLines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGridLines.h; sourceTree = "<group>"; };
+		DD75F58E15673B4300DE3307 /* CPTImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTImage.h; sourceTree = "<group>"; };
+		DD75F58F15673B4300DE3307 /* CPTLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLayer.h; sourceTree = "<group>"; };
+		DD75F59015673B4300DE3307 /* CPTLayerAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLayerAnnotation.h; sourceTree = "<group>"; };
+		DD75F59115673B4300DE3307 /* CPTLegend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLegend.h; sourceTree = "<group>"; };
+		DD75F59215673B4300DE3307 /* CPTLegendEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLegendEntry.h; sourceTree = "<group>"; };
+		DD75F59315673B4300DE3307 /* CPTLimitBand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLimitBand.h; sourceTree = "<group>"; };
+		DD75F59415673B4300DE3307 /* CPTLineCap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLineCap.h; sourceTree = "<group>"; };
+		DD75F59515673B4300DE3307 /* CPTLineStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLineStyle.h; sourceTree = "<group>"; };
+		DD75F59615673B4300DE3307 /* CPTMutableLineStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTMutableLineStyle.h; sourceTree = "<group>"; };
+		DD75F59715673B4300DE3307 /* CPTMutableNumericData+TypeConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPTMutableNumericData+TypeConversion.h"; sourceTree = "<group>"; };
+		DD75F59815673B4300DE3307 /* CPTMutableNumericData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTMutableNumericData.h; sourceTree = "<group>"; };
+		DD75F59915673B4300DE3307 /* CPTMutablePlotRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTMutablePlotRange.h; sourceTree = "<group>"; };
+		DD75F59A15673B4300DE3307 /* CPTMutableShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTMutableShadow.h; sourceTree = "<group>"; };
+		DD75F59B15673B4300DE3307 /* CPTMutableTextStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTMutableTextStyle.h; sourceTree = "<group>"; };
+		DD75F59C15673B4300DE3307 /* CPTNumericData+TypeConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPTNumericData+TypeConversion.h"; sourceTree = "<group>"; };
+		DD75F59D15673B4300DE3307 /* CPTNumericData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTNumericData.h; sourceTree = "<group>"; };
+		DD75F59E15673B4300DE3307 /* CPTNumericDataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTNumericDataType.h; sourceTree = "<group>"; };
+		DD75F59F15673B4300DE3307 /* CPTPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPathExtensions.h; sourceTree = "<group>"; };
+		DD75F5A015673B4300DE3307 /* CPTPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPieChart.h; sourceTree = "<group>"; };
+		DD75F5A115673B4300DE3307 /* CPTPlatformSpecificCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlatformSpecificCategories.h; sourceTree = "<group>"; };
+		DD75F5A215673B4300DE3307 /* CPTPlatformSpecificDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlatformSpecificDefines.h; sourceTree = "<group>"; };
+		DD75F5A315673B4300DE3307 /* CPTPlatformSpecificFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlatformSpecificFunctions.h; sourceTree = "<group>"; };
+		DD75F5A415673B4300DE3307 /* CPTPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlot.h; sourceTree = "<group>"; };
+		DD75F5A515673B4300DE3307 /* CPTPlotArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotArea.h; sourceTree = "<group>"; };
+		DD75F5A615673B4300DE3307 /* CPTPlotAreaFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotAreaFrame.h; sourceTree = "<group>"; };
+		DD75F5A715673B4300DE3307 /* CPTPlotGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotGroup.h; sourceTree = "<group>"; };
+		DD75F5A815673B4300DE3307 /* CPTPlotRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotRange.h; sourceTree = "<group>"; };
+		DD75F5A915673B4300DE3307 /* CPTPlotSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotSpace.h; sourceTree = "<group>"; };
+		DD75F5AA15673B4300DE3307 /* CPTPlotSpaceAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotSpaceAnnotation.h; sourceTree = "<group>"; };
+		DD75F5AB15673B4300DE3307 /* CPTPlotSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotSymbol.h; sourceTree = "<group>"; };
+		DD75F5AC15673B4300DE3307 /* CPTRangePlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTRangePlot.h; sourceTree = "<group>"; };
+		DD75F5AD15673B4300DE3307 /* CPTResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTResponder.h; sourceTree = "<group>"; };
+		DD75F5AE15673B4300DE3307 /* CPTScatterPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTScatterPlot.h; sourceTree = "<group>"; };
+		DD75F5AF15673B4300DE3307 /* CPTShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTShadow.h; sourceTree = "<group>"; };
+		DD75F5B015673B4300DE3307 /* CPTTextLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTTextLayer.h; sourceTree = "<group>"; };
+		DD75F5B115673B4300DE3307 /* CPTTextStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTTextStyle.h; sourceTree = "<group>"; };
+		DD75F5B215673B4300DE3307 /* CPTTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTTheme.h; sourceTree = "<group>"; };
+		DD75F5B315673B4300DE3307 /* CPTTimeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTTimeFormatter.h; sourceTree = "<group>"; };
+		DD75F5B415673B4300DE3307 /* CPTTradingRangePlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTTradingRangePlot.h; sourceTree = "<group>"; };
+		DD75F5B515673B4300DE3307 /* CPTUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTUtilities.h; sourceTree = "<group>"; };
+		DD75F5B615673B4300DE3307 /* CPTXYAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTXYAxis.h; sourceTree = "<group>"; };
+		DD75F5B715673B4300DE3307 /* CPTXYAxisSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTXYAxisSet.h; sourceTree = "<group>"; };
+		DD75F5B815673B4300DE3307 /* CPTXYGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTXYGraph.h; sourceTree = "<group>"; };
+		DD75F5B915673B4300DE3307 /* CPTXYPlotSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTXYPlotSpace.h; sourceTree = "<group>"; };
+		DD75F5BA15673B4300DE3307 /* NSCoderExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCoderExtensions.h; sourceTree = "<group>"; };
+		DD75F5BB15673B4300DE3307 /* NSDecimalNumberExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDecimalNumberExtensions.h; sourceTree = "<group>"; };
+		DD75F5BC15673B4300DE3307 /* NSNumberExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNumberExtensions.h; sourceTree = "<group>"; };
+		DD75F5BD15673B4300DE3307 /* libCorePlot-CocoaTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libCorePlot-CocoaTouch.a"; sourceTree = "<group>"; };
+		DD75F5BF15673D3D00DE3307 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DD75F5C215673FB200DE3307 /* CPDConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPDConstants.h; sourceTree = "<group>"; };
+		DD75F5C315673FB200DE3307 /* CPDConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPDConstants.m; sourceTree = "<group>"; };
+		DD75F5C415673FB200DE3307 /* CPDStockPriceStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPDStockPriceStore.h; sourceTree = "<group>"; };
+		DD75F5C515673FB200DE3307 /* CPDStockPriceStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPDStockPriceStore.m; sourceTree = "<group>"; };
+		DD75F5CF156756AE00DE3307 /* CPDScatterPlotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPDScatterPlotViewController.h; sourceTree = "<group>"; };
+		DD75F5D0156756AE00DE3307 /* CPDScatterPlotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPDScatterPlotViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B607CB6A200FA3DD00090BD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B607CB7D200FA3DE00090BD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B607CB88200FA3DE00090BD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD75F53D15673A4E00DE3307 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD75F5C015673D3D00DE3307 /* QuartzCore.framework in Frameworks */,
 				DD75F54515673A4E00DE3307 /* UIKit.framework in Frameworks */,
 				DD75F54715673A4E00DE3307 /* Foundation.framework in Frameworks */,
 				DD75F54915673A4E00DE3307 /* CoreGraphics.framework in Frameworks */,
+				DD75F5BE15673B4300DE3307 /* libCorePlot-CocoaTouch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B607CB6E200FA3DD00090BD2 /* CorePlot */ = {
+			isa = PBXGroup;
+			children = (
+				B607CB6F200FA3DD00090BD2 /* AppDelegate.swift */,
+				B607CB71200FA3DD00090BD2 /* ViewController.swift */,
+				B607CB73200FA3DD00090BD2 /* Main.storyboard */,
+				B607CB76200FA3DD00090BD2 /* Assets.xcassets */,
+				B607CB78200FA3DE00090BD2 /* LaunchScreen.storyboard */,
+				B607CB7B200FA3DE00090BD2 /* Info.plist */,
+			);
+			path = CorePlot;
+			sourceTree = "<group>";
+		};
+		B607CB83200FA3DE00090BD2 /* CorePlotTests */ = {
+			isa = PBXGroup;
+			children = (
+				B607CB84200FA3DE00090BD2 /* CorePlotTests.swift */,
+				B607CB86200FA3DE00090BD2 /* Info.plist */,
+			);
+			path = CorePlotTests;
+			sourceTree = "<group>";
+		};
+		B607CB8E200FA3DE00090BD2 /* CorePlotUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B607CB8F200FA3DE00090BD2 /* CorePlotUITests.swift */,
+				B607CB91200FA3DE00090BD2 /* Info.plist */,
+			);
+			path = CorePlotUITests;
+			sourceTree = "<group>";
+		};
 		DD75F53515673A4E00DE3307 = {
 			isa = PBXGroup;
 			children = (
+				DD75F5BF15673D3D00DE3307 /* QuartzCore.framework */,
 				DD75F54A15673A4E00DE3307 /* CorePlotDemo */,
+				B607CB6E200FA3DD00090BD2 /* CorePlot */,
+				B607CB83200FA3DE00090BD2 /* CorePlotTests */,
+				B607CB8E200FA3DE00090BD2 /* CorePlotUITests */,
 				DD75F54315673A4E00DE3307 /* Frameworks */,
 				DD75F54115673A4E00DE3307 /* Products */,
 			);
@@ -71,6 +260,9 @@
 			isa = PBXGroup;
 			children = (
 				DD75F54015673A4E00DE3307 /* CorePlotDemo.app */,
+				B607CB6D200FA3DD00090BD2 /* CorePlot.app */,
+				B607CB80200FA3DE00090BD2 /* CorePlotTests.xctest */,
+				B607CB8B200FA3DE00090BD2 /* CorePlotUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,18 +280,23 @@
 		DD75F54A15673A4E00DE3307 /* CorePlotDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DD75F56C15673A7600DE3307 /* CorePlot */,
+				DD75F5C115673FB200DE3307 /* Starter Files */,
+				DD75F54B15673A4E00DE3307 /* Supporting Files */,
 				DD75F55315673A4E00DE3307 /* CPDAppDelegate.h */,
 				DD75F55415673A4E00DE3307 /* CPDAppDelegate.m */,
-				DD75F55615673A4E00DE3307 /* MainStoryboard.storyboard */,
-				DD75F55915673A4E00DE3307 /* CPDFirstViewController.h */,
-				DD75F55A15673A4E00DE3307 /* CPDFirstViewController.m */,
+				DD75F55615673A4E00DE3307 /* MainStoryboard_iPhone.storyboard */,
+				C38AE19F1C745C7F005CBDD4 /* MainStoryboard_iPad.storyboard */,
+				DD75F55915673A4E00DE3307 /* CPDPieChartViewController.h */,
+				DD75F55A15673A4E00DE3307 /* CPDPieChartViewController.m */,
 				DD75F55C15673A4E00DE3307 /* first.png */,
 				DD75F55E15673A4E00DE3307 /* first@2x.png */,
-				DD75F56015673A4E00DE3307 /* CPDSecondViewController.h */,
-				DD75F56115673A4E00DE3307 /* CPDSecondViewController.m */,
+				DD75F56015673A4E00DE3307 /* CPDBarGraphViewController.h */,
+				DD75F56115673A4E00DE3307 /* CPDBarGraphViewController.m */,
 				DD75F56315673A4E00DE3307 /* second.png */,
 				DD75F56515673A4E00DE3307 /* second@2x.png */,
-				DD75F54B15673A4E00DE3307 /* Supporting Files */,
+				DD75F5CF156756AE00DE3307 /* CPDScatterPlotViewController.h */,
+				DD75F5D0156756AE00DE3307 /* CPDScatterPlotViewController.m */,
 			);
 			path = CorePlotDemo;
 			sourceTree = "<group>";
@@ -115,9 +312,169 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DD75F56C15673A7600DE3307 /* CorePlot */ = {
+			isa = PBXGroup;
+			children = (
+				DD75F56D15673B4200DE3307 /* CorePlotHeaders */,
+				DD75F5BD15673B4300DE3307 /* libCorePlot-CocoaTouch.a */,
+			);
+			name = CorePlot;
+			sourceTree = "<group>";
+		};
+		DD75F56D15673B4200DE3307 /* CorePlotHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				DD75F56E15673B4200DE3307 /* _CPTConstraintsFixed.h */,
+				DD75F56F15673B4200DE3307 /* _CPTConstraintsRelative.h */,
+				DD75F57015673B4200DE3307 /* _CPTDarkGradientTheme.h */,
+				DD75F57115673B4200DE3307 /* _CPTFillColor.h */,
+				DD75F57215673B4200DE3307 /* _CPTFillGradient.h */,
+				DD75F57315673B4200DE3307 /* _CPTFillImage.h */,
+				DD75F57415673B4200DE3307 /* _CPTPlainBlackTheme.h */,
+				DD75F57515673B4200DE3307 /* _CPTPlainWhiteTheme.h */,
+				DD75F57615673B4200DE3307 /* _CPTSlateTheme.h */,
+				DD75F57715673B4300DE3307 /* _CPTStocksTheme.h */,
+				DD75F57815673B4300DE3307 /* _CPTXYTheme.h */,
+				DD75F57915673B4300DE3307 /* CorePlot-CocoaTouch.h */,
+				DD75F57A15673B4300DE3307 /* CPTAnnotation.h */,
+				DD75F57B15673B4300DE3307 /* CPTAnnotationHostLayer.h */,
+				DD75F57C15673B4300DE3307 /* CPTAxis.h */,
+				DD75F57D15673B4300DE3307 /* CPTAxisLabel.h */,
+				DD75F57E15673B4300DE3307 /* CPTAxisLabelGroup.h */,
+				DD75F57F15673B4300DE3307 /* CPTAxisSet.h */,
+				DD75F58015673B4300DE3307 /* CPTAxisTitle.h */,
+				DD75F58115673B4300DE3307 /* CPTBarPlot.h */,
+				DD75F58215673B4300DE3307 /* CPTBorderedLayer.h */,
+				DD75F58315673B4300DE3307 /* CPTColor.h */,
+				DD75F58415673B4300DE3307 /* CPTColorSpace.h */,
+				DD75F58515673B4300DE3307 /* CPTConstraints.h */,
+				DD75F58615673B4300DE3307 /* CPTDefinitions.h */,
+				DD75F58715673B4300DE3307 /* CPTExceptions.h */,
+				DD75F58815673B4300DE3307 /* CPTFill.h */,
+				DD75F58915673B4300DE3307 /* CPTGradient.h */,
+				DD75F58A15673B4300DE3307 /* CPTGraph.h */,
+				DD75F58B15673B4300DE3307 /* CPTGraphHostingView.h */,
+				DD75F58C15673B4300DE3307 /* CPTGridLineGroup.h */,
+				DD75F58D15673B4300DE3307 /* CPTGridLines.h */,
+				DD75F58E15673B4300DE3307 /* CPTImage.h */,
+				DD75F58F15673B4300DE3307 /* CPTLayer.h */,
+				DD75F59015673B4300DE3307 /* CPTLayerAnnotation.h */,
+				DD75F59115673B4300DE3307 /* CPTLegend.h */,
+				DD75F59215673B4300DE3307 /* CPTLegendEntry.h */,
+				DD75F59315673B4300DE3307 /* CPTLimitBand.h */,
+				DD75F59415673B4300DE3307 /* CPTLineCap.h */,
+				DD75F59515673B4300DE3307 /* CPTLineStyle.h */,
+				DD75F59615673B4300DE3307 /* CPTMutableLineStyle.h */,
+				DD75F59715673B4300DE3307 /* CPTMutableNumericData+TypeConversion.h */,
+				DD75F59815673B4300DE3307 /* CPTMutableNumericData.h */,
+				DD75F59915673B4300DE3307 /* CPTMutablePlotRange.h */,
+				DD75F59A15673B4300DE3307 /* CPTMutableShadow.h */,
+				DD75F59B15673B4300DE3307 /* CPTMutableTextStyle.h */,
+				DD75F59C15673B4300DE3307 /* CPTNumericData+TypeConversion.h */,
+				DD75F59D15673B4300DE3307 /* CPTNumericData.h */,
+				DD75F59E15673B4300DE3307 /* CPTNumericDataType.h */,
+				DD75F59F15673B4300DE3307 /* CPTPathExtensions.h */,
+				DD75F5A015673B4300DE3307 /* CPTPieChart.h */,
+				DD75F5A115673B4300DE3307 /* CPTPlatformSpecificCategories.h */,
+				DD75F5A215673B4300DE3307 /* CPTPlatformSpecificDefines.h */,
+				DD75F5A315673B4300DE3307 /* CPTPlatformSpecificFunctions.h */,
+				DD75F5A415673B4300DE3307 /* CPTPlot.h */,
+				DD75F5A515673B4300DE3307 /* CPTPlotArea.h */,
+				DD75F5A615673B4300DE3307 /* CPTPlotAreaFrame.h */,
+				DD75F5A715673B4300DE3307 /* CPTPlotGroup.h */,
+				DD75F5A815673B4300DE3307 /* CPTPlotRange.h */,
+				DD75F5A915673B4300DE3307 /* CPTPlotSpace.h */,
+				DD75F5AA15673B4300DE3307 /* CPTPlotSpaceAnnotation.h */,
+				DD75F5AB15673B4300DE3307 /* CPTPlotSymbol.h */,
+				DD75F5AC15673B4300DE3307 /* CPTRangePlot.h */,
+				DD75F5AD15673B4300DE3307 /* CPTResponder.h */,
+				DD75F5AE15673B4300DE3307 /* CPTScatterPlot.h */,
+				DD75F5AF15673B4300DE3307 /* CPTShadow.h */,
+				DD75F5B015673B4300DE3307 /* CPTTextLayer.h */,
+				DD75F5B115673B4300DE3307 /* CPTTextStyle.h */,
+				DD75F5B215673B4300DE3307 /* CPTTheme.h */,
+				DD75F5B315673B4300DE3307 /* CPTTimeFormatter.h */,
+				DD75F5B415673B4300DE3307 /* CPTTradingRangePlot.h */,
+				DD75F5B515673B4300DE3307 /* CPTUtilities.h */,
+				DD75F5B615673B4300DE3307 /* CPTXYAxis.h */,
+				DD75F5B715673B4300DE3307 /* CPTXYAxisSet.h */,
+				DD75F5B815673B4300DE3307 /* CPTXYGraph.h */,
+				DD75F5B915673B4300DE3307 /* CPTXYPlotSpace.h */,
+				DD75F5BA15673B4300DE3307 /* NSCoderExtensions.h */,
+				DD75F5BB15673B4300DE3307 /* NSDecimalNumberExtensions.h */,
+				DD75F5BC15673B4300DE3307 /* NSNumberExtensions.h */,
+			);
+			path = CorePlotHeaders;
+			sourceTree = "<group>";
+		};
+		DD75F5C115673FB200DE3307 /* Starter Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD75F5C215673FB200DE3307 /* CPDConstants.h */,
+				DD75F5C315673FB200DE3307 /* CPDConstants.m */,
+				DD75F5C415673FB200DE3307 /* CPDStockPriceStore.h */,
+				DD75F5C515673FB200DE3307 /* CPDStockPriceStore.m */,
+			);
+			name = "Starter Files";
+			path = "../Starter Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B607CB6C200FA3DD00090BD2 /* CorePlot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B607CB98200FA3DE00090BD2 /* Build configuration list for PBXNativeTarget "CorePlot" */;
+			buildPhases = (
+				B607CB69200FA3DD00090BD2 /* Sources */,
+				B607CB6A200FA3DD00090BD2 /* Frameworks */,
+				B607CB6B200FA3DD00090BD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CorePlot;
+			productName = CorePlot;
+			productReference = B607CB6D200FA3DD00090BD2 /* CorePlot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B607CB7F200FA3DE00090BD2 /* CorePlotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B607CB99200FA3DE00090BD2 /* Build configuration list for PBXNativeTarget "CorePlotTests" */;
+			buildPhases = (
+				B607CB7C200FA3DE00090BD2 /* Sources */,
+				B607CB7D200FA3DE00090BD2 /* Frameworks */,
+				B607CB7E200FA3DE00090BD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B607CB82200FA3DE00090BD2 /* PBXTargetDependency */,
+			);
+			name = CorePlotTests;
+			productName = CorePlotTests;
+			productReference = B607CB80200FA3DE00090BD2 /* CorePlotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B607CB8A200FA3DE00090BD2 /* CorePlotUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B607CB9A200FA3DE00090BD2 /* Build configuration list for PBXNativeTarget "CorePlotUITests" */;
+			buildPhases = (
+				B607CB87200FA3DE00090BD2 /* Sources */,
+				B607CB88200FA3DE00090BD2 /* Frameworks */,
+				B607CB89200FA3DE00090BD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B607CB8D200FA3DE00090BD2 /* PBXTargetDependency */,
+			);
+			name = CorePlotUITests;
+			productName = CorePlotUITests;
+			productReference = B607CB8B200FA3DE00090BD2 /* CorePlotUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		DD75F53F15673A4E00DE3307 /* CorePlotDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD75F56915673A4E00DE3307 /* Build configuration list for PBXNativeTarget "CorePlotDemo" */;
@@ -142,8 +499,25 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = CPD;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "RookSoft Pte. Ltd.";
+				TargetAttributes = {
+					B607CB6C200FA3DD00090BD2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					B607CB7F200FA3DE00090BD2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B607CB6C200FA3DD00090BD2;
+					};
+					B607CB8A200FA3DE00090BD2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B607CB6C200FA3DD00090BD2;
+					};
+				};
 			};
 			buildConfigurationList = DD75F53A15673A4E00DE3307 /* Build configuration list for PBXProject "CorePlotDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -151,6 +525,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = DD75F53515673A4E00DE3307;
 			productRefGroup = DD75F54115673A4E00DE3307 /* Products */;
@@ -158,41 +533,134 @@
 			projectRoot = "";
 			targets = (
 				DD75F53F15673A4E00DE3307 /* CorePlotDemo */,
+				B607CB6C200FA3DD00090BD2 /* CorePlot */,
+				B607CB7F200FA3DE00090BD2 /* CorePlotTests */,
+				B607CB8A200FA3DE00090BD2 /* CorePlotUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B607CB6B200FA3DD00090BD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B607CB7A200FA3DE00090BD2 /* LaunchScreen.storyboard in Resources */,
+				B607CB77200FA3DD00090BD2 /* Assets.xcassets in Resources */,
+				B607CB75200FA3DD00090BD2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B607CB7E200FA3DE00090BD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B607CB89200FA3DE00090BD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD75F53E15673A4E00DE3307 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DD75F54F15673A4E00DE3307 /* InfoPlist.strings in Resources */,
-				DD75F55815673A4E00DE3307 /* MainStoryboard.storyboard in Resources */,
+				DD75F55815673A4E00DE3307 /* MainStoryboard_iPhone.storyboard in Resources */,
 				DD75F55D15673A4E00DE3307 /* first.png in Resources */,
 				DD75F55F15673A4E00DE3307 /* first@2x.png in Resources */,
 				DD75F56415673A4E00DE3307 /* second.png in Resources */,
 				DD75F56615673A4E00DE3307 /* second@2x.png in Resources */,
+				C38AE1A11C745C7F005CBDD4 /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B607CB69200FA3DD00090BD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B607CB72200FA3DD00090BD2 /* ViewController.swift in Sources */,
+				B607CB70200FA3DD00090BD2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B607CB7C200FA3DE00090BD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B607CB85200FA3DE00090BD2 /* CorePlotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B607CB87200FA3DE00090BD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B607CB90200FA3DE00090BD2 /* CorePlotUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD75F53C15673A4E00DE3307 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DD75F55115673A4E00DE3307 /* main.m in Sources */,
 				DD75F55515673A4E00DE3307 /* CPDAppDelegate.m in Sources */,
-				DD75F55B15673A4E00DE3307 /* CPDFirstViewController.m in Sources */,
-				DD75F56215673A4E00DE3307 /* CPDSecondViewController.m in Sources */,
+				DD75F55B15673A4E00DE3307 /* CPDPieChartViewController.m in Sources */,
+				DD75F56215673A4E00DE3307 /* CPDBarGraphViewController.m in Sources */,
+				DD75F5C615673FB200DE3307 /* CPDConstants.m in Sources */,
+				DD75F5C715673FB200DE3307 /* CPDStockPriceStore.m in Sources */,
+				DD75F5D1156756AE00DE3307 /* CPDScatterPlotViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B607CB82200FA3DE00090BD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B607CB6C200FA3DD00090BD2 /* CorePlot */;
+			targetProxy = B607CB81200FA3DE00090BD2 /* PBXContainerItemProxy */;
+		};
+		B607CB8D200FA3DE00090BD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B607CB6C200FA3DD00090BD2 /* CorePlot */;
+			targetProxy = B607CB8C200FA3DE00090BD2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		B607CB73200FA3DD00090BD2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B607CB74200FA3DD00090BD2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B607CB78200FA3DE00090BD2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B607CB79200FA3DE00090BD2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C38AE19F1C745C7F005CBDD4 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C38AE1A01C745C7F005CBDD4 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
 		DD75F54D15673A4E00DE3307 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -201,24 +669,354 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		DD75F55615673A4E00DE3307 /* MainStoryboard.storyboard */ = {
+		DD75F55615673A4E00DE3307 /* MainStoryboard_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DD75F55715673A4E00DE3307 /* en */,
 			);
-			name = MainStoryboard.storyboard;
+			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B607CB92200FA3DE00090BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = CorePlot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = csscorp.CorePlot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B607CB93200FA3DE00090BD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = CorePlot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = csscorp.CorePlot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B607CB94200FA3DE00090BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = CorePlotTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = csscorp.CorePlotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CorePlot.app/CorePlot";
+			};
+			name = Debug;
+		};
+		B607CB95200FA3DE00090BD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = CorePlotTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = csscorp.CorePlotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CorePlot.app/CorePlot";
+			};
+			name = Release;
+		};
+		B607CB96200FA3DE00090BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = CorePlotUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = csscorp.CorePlotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f400786e-c17a-4c7f-ad6c-abf1efc879ac";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CorePlot;
+			};
+			name = Debug;
+		};
+		B607CB97200FA3DE00090BD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = CorePlotUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = csscorp.CorePlotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f400786e-c17a-4c7f-ad6c-abf1efc879ac";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CorePlot;
+			};
+			name = Release;
+		};
 		DD75F56715673A4E00DE3307 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Santhoshkumar Anbu (RUQM2PK8TM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Santhoshkumar Anbu (RUQM2PK8TM)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -233,6 +1031,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "f400786e-c17a-4c7f-ad6c-abf1efc879ac";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -243,7 +1042,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Santhoshkumar Anbu (RUQM2PK8TM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Santhoshkumar Anbu (RUQM2PK8TM)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -252,6 +1052,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "f400786e-c17a-4c7f-ad6c-abf1efc879ac";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -260,10 +1061,22 @@
 		DD75F56A15673A4E00DE3307 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Khoo Wee Joo (C5MAG347G9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Khoo Wee Joo (C5MAG347G9)";
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CorePlotDemo/CorePlotDemo-Prefix.pch";
 				INFOPLIST_FILE = "CorePlotDemo/CorePlotDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/CorePlotDemo\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SingPost.vBOX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "09063dbd-1e8c-4e9d-996e-76b4a655a041";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -271,10 +1084,22 @@
 		DD75F56B15673A4E00DE3307 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Khoo Wee Joo (C5MAG347G9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Khoo Wee Joo (C5MAG347G9)";
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CorePlotDemo/CorePlotDemo-Prefix.pch";
 				INFOPLIST_FILE = "CorePlotDemo/CorePlotDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/CorePlotDemo\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SingPost.vBOX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "09063dbd-1e8c-4e9d-996e-76b4a655a041";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -282,6 +1107,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B607CB98200FA3DE00090BD2 /* Build configuration list for PBXNativeTarget "CorePlot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B607CB92200FA3DE00090BD2 /* Debug */,
+				B607CB93200FA3DE00090BD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B607CB99200FA3DE00090BD2 /* Build configuration list for PBXNativeTarget "CorePlotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B607CB94200FA3DE00090BD2 /* Debug */,
+				B607CB95200FA3DE00090BD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B607CB9A200FA3DE00090BD2 /* Build configuration list for PBXNativeTarget "CorePlotUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B607CB96200FA3DE00090BD2 /* Debug */,
+				B607CB97200FA3DE00090BD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DD75F53A15673A4E00DE3307 /* Build configuration list for PBXProject "CorePlotDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -298,6 +1150,7 @@
 				DD75F56B15673A4E00DE3307 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
